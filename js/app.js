@@ -98,6 +98,10 @@ function consultarAPI(){
             mostrarCotizacionHTML(cotizacion.DISPLAY[criptomoneda][moneda]);
         })
     },3000)
+    //Reiniciando el Objeto junto con los select
+    objBusqueda.moneda = '';
+    objBusqueda.criptomoneda = '';
+    formulario.reset();
 }
 
 function mostrarCotizacionHTML(cotizacion){
